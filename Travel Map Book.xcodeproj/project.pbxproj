@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3FA5241E3FD077007BD089 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3FA5231E3FD077007BD089 /* CoreLocation.framework */; };
 		FCD7C08F1E3E116B0019A2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7C08E1E3E116B0019A2A1 /* AppDelegate.swift */; };
 		FCD7C0911E3E116B0019A2A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7C0901E3E116B0019A2A1 /* ViewController.swift */; };
 		FCD7C0941E3E116B0019A2A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD7C0921E3E116B0019A2A1 /* Main.storyboard */; };
 		FCD7C0971E3E116B0019A2A1 /* Travel_Map_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCD7C0951E3E116B0019A2A1 /* Travel_Map_Book.xcdatamodeld */; };
 		FCD7C0991E3E116B0019A2A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD7C0981E3E116B0019A2A1 /* Assets.xcassets */; };
 		FCD7C09C1E3E116B0019A2A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD7C09A1E3E116B0019A2A1 /* LaunchScreen.storyboard */; };
+		FCD7C0A41E3E1BAB0019A2A1 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7C0A31E3E1BAB0019A2A1 /* firstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC3FA5231E3FD077007BD089 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FCD7C08B1E3E116B0019A2A1 /* Travel Map Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Map Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD7C08E1E3E116B0019A2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD7C0901E3E116B0019A2A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		FCD7C0981E3E116B0019A2A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD7C09B1E3E116B0019A2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCD7C09D1E3E116B0019A2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD7C0A31E3E1BAB0019A2A1 /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3FA5241E3FD077007BD089 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3FA5221E3FD077007BD089 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC3FA5231E3FD077007BD089 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCD7C0821E3E116B0019A2A1 = {
 			isa = PBXGroup;
 			children = (
 				FCD7C08D1E3E116B0019A2A1 /* Travel Map Book */,
 				FCD7C08C1E3E116B0019A2A1 /* Products */,
+				FC3FA5221E3FD077007BD089 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +72,7 @@
 			children = (
 				FCD7C08E1E3E116B0019A2A1 /* AppDelegate.swift */,
 				FCD7C0901E3E116B0019A2A1 /* ViewController.swift */,
+				FCD7C0A31E3E1BAB0019A2A1 /* firstViewController.swift */,
 				FCD7C0921E3E116B0019A2A1 /* Main.storyboard */,
 				FCD7C0981E3E116B0019A2A1 /* Assets.xcassets */,
 				FCD7C09A1E3E116B0019A2A1 /* LaunchScreen.storyboard */,
@@ -143,6 +158,7 @@
 				FCD7C0911E3E116B0019A2A1 /* ViewController.swift in Sources */,
 				FCD7C0971E3E116B0019A2A1 /* Travel_Map_Book.xcdatamodeld in Sources */,
 				FCD7C08F1E3E116B0019A2A1 /* AppDelegate.swift in Sources */,
+				FCD7C0A41E3E1BAB0019A2A1 /* firstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +322,7 @@
 				FCD7C0A21E3E116B0019A2A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
